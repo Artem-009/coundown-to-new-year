@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	background: #4169a0;
+	color: #fff;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.countText{
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 700;
+	line-height: 3em;
+}
+
+.countdown{
+	margin-top: 30px;
+	background: rgba(0,0,0,0.1);
+	width: 100%;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.countdown div{
+	position: relative;
+	width: 100px;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 500;
+	margin: 0 15px;
+}
+
+.countdown div:before{
+	content: 'text';
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	color: #fff;
+	font-size: 0.35em;
+	font-weight: 700;
+	line-height: 35px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.countdown div#day:before{
+	content: 'Дней';
+}
+
+.countdown div#hour:before{
+	content: 'часов';
+}
+
+.countdown div#minute:before{
+	content: 'минут';
+}
+
+.countdown div#second:before{
+	content: 'cекунд';
+}
+
+#second,
+#second:before{
+	color: #FF7300;
+}
+
